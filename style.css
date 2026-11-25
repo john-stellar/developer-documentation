@@ -494,6 +494,22 @@ a[data-component-name="primary-header-button"]::before {
   mask-image: url("/img/sds-icons/icons-check.svg");
 }
 
+/* Round documentation images, with extra rounding for animated GIFs. */
+#body-content img {
+  border-radius: 12px;
+}
+
+#body-content img[src$=".gif" i],
+#body-content img[src*=".gif?" i],
+#body-content img[src*=".gif#" i] {
+  border-radius: 21px;
+}
+
+/* Opt out with className="no-rounding" in MDX. */
+#body-content img.no-rounding {
+  border-radius: 0;
+}
+
 /* Code block frame (filename header area): SDS gray-02 instead of Mintlify's tinted gray */
 #body-content .code-block {
   background-color: var(--sds-clr-gray-02) !important;

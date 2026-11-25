@@ -268,15 +268,15 @@ When I click the **Submit** button, the endpoint returns the records of payments
 
 Horizon's `/assets` endpoint provides information about an asset. Since we are not interested in historical data, we will use SDF's Mainnet Horizon to retrieve the latest information about the asset.
 
-![Lab: Horizon - Assets Page](/assets/lab/horizon-assets.png)
+![Stellar Lab Horizon assets endpoint](/assets/lab/horizon-assets.png)
 
 Let's inquire about one of the most popular assets on the Stellar network: [USDC by Circle](https://www.circle.com/usdc). To do this, enter `USDC` as the Asset Code and `GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN` as the Asset Issuer.
 
-![Lab: Horizon - Assets Page](/assets/lab/horizon-assets-usdc.png)
+![Stellar Lab Horizon assets request for USDC](/assets/lab/horizon-assets-usdc.png)
 
 When I click the **Submit** button, the `/assets` endpoint returns the `USDC` asset details in `JSON` format.
 
-![Lab: Horizon - Assets Page](/assets/lab/horizon-assets-usdc-response.png)
+![Stellar Lab Horizon assets response for USDC](/assets/lab/horizon-assets-usdc-response.png)
 
 The JSON response for the `USDC` asset includes [the asset object](../../../data/apis/horizon/api-reference/resources/assets/object), which contains details about USDC, such as the asset's TOML file (also known as [the Stellar info file](../../../tokens/publishing-asset-info)), the number of claimable balances, liquidity pools, contracts, accounts, balances, and flags.
 

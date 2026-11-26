@@ -56,11 +56,11 @@ docker compose -p sdp-monitoring -f docker-compose-monitoring.yml down
 
 ### Load the SDP Grafana Dashboard
 
-1. Navigate to [http://localhost:3002](http://localhost:3002) and sign in with the default `admin` / `admin` credentials. ![Grafana Login](/assets/SDP/SDP42.png)
+1. Navigate to [http://localhost:3002](http://localhost:3002) and sign in with the default `admin` / `admin` credentials. ![Grafana Login](/assets/sdp/42.png)
 
-2. Click the `+` icon in the top navigation bar (next to the search input), choose `Import dashboard`, and paste the contents of [Grafana Dashboard Json](https://github.com/stellar/stellar-disbursement-platform-backend/blob/develop/resources/grafana/dashboard.json). ![Import Dashboard](/assets/SDP/SDP43.png)
+2. Click the `+` icon in the top navigation bar (next to the search input), choose `Import dashboard`, and paste the contents of [Grafana Dashboard Json](https://github.com/stellar/stellar-disbursement-platform-backend/blob/develop/resources/grafana/dashboard.json). ![Import Dashboard](/assets/sdp/43.png)
 
-3. Select the `prometheus` datasource provided by [datasource](https://github.com/stellar/stellar-disbursement-platform-backend/blob/develop/dev/grafana/datasource.yaml). ![Select Datasource](/assets/SDP/SDP44.png)
+3. Select the `prometheus` datasource provided by [datasource](https://github.com/stellar/stellar-disbursement-platform-backend/blob/develop/dev/grafana/datasource.yaml). ![Select Datasource](/assets/sdp/44.png)
 
 Three dashboards ship in [resources/grafana](https://github.com/stellar/stellar-disbursement-platform-backend/tree/develop/resources/grafana): Stellar Disbursement Platform (`dashboard.json`), Transaction Submission Service Metrics (`transaction_submission_service_dashboard.json`), and TSS Payments Dashboard (`tss_payments_dashboard.json`). Import each the same way.
 
